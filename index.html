@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>weeb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <section id="header">
+            <div id="header_lef-container">
+                <h1 id="logo">weeb</h1>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">About Us</a></li>
+                    <li><a href="">Solutions</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Resources</a></li>
+                </ul>
+            </div>
+            <div id="header_right-container">
+                <ul id="auth_navbar">
+                    <li><button id="auth_button">Log In</button></li>
+                    <li id="auth_navbar_item2"><a href="">Join Now</a></li>
+                </ul>
+                <button id="burger_but">
+                    <img src="images/menu.svg" alt="">
+                </button>
+
+
+                <div id="auth_form" class="hidden">
+                    <div class="auth_title">
+                        <h2>Authorization</h2>
+                        <button id="auth_cross"><img src="images/cross.svg" alt=""></button>
+                    </div>
+                    <form id="login_form" class="auth_form">
+                        <div class="form_group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                        </div>
+                        <div class="form_group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required placeholder="*****">
+                            <a href="#" class="forgot_password">Forgot your password?</a>
+                        </div>
+                        <button type="submit" class="auth_button">Login</button>
+                        <a href="register">Register</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div id="burger" class="hidden">
+            <ul>
+                <li><a class="active" href="index.html">About Us</a></li>
+                <li><a href="">Solutions</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Resources</a></li>
+            </ul>
+            <button id="burger_cross">
+                <img src="images/cross.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
